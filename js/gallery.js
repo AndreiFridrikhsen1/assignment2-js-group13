@@ -111,6 +111,9 @@ document.addEventListener("DOMContentLoaded", function() {
 					selectedIndex = null;
 				}
 				featuredImage.src = images[index].large;
+				caption.textContent = images[index].caption;
+				featuredImage.alt = images[index].alt;
+
 				
 				document.querySelectorAll("#thumbnails img").forEach((img, imgIndex) => {
 					if (imgIndex === index) {
